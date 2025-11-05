@@ -1,6 +1,6 @@
 "use client";
 import classNames from "classnames";
-import { anticipate, motion } from "motion/react";
+import { motion } from "motion/react";
 
 export default function CrosshairCorners({
   size = 10,
@@ -45,7 +45,7 @@ export default function CrosshairCorners({
       }}
       transition={{
         duration: animationDuration,
-        ease: anticipate,
+        ease: "anticipate",
         delay: baseDelay,
       }}
       style={

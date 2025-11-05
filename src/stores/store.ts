@@ -128,7 +128,7 @@ const migrate = (
 
 export const usePersistentStore = create<PersistentStore>()(
   persist(
-    (set, get) => ({
+    (set) => ({
       // User's View Preference
       view: "grid",
       setView: (view) => set({ view }),

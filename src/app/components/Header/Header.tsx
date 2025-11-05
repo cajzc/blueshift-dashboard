@@ -23,7 +23,7 @@ export default function HeaderContent() {
   const t = useTranslations();
   const currentLocale = useLocale();
   const { locales } = routing;
-  const { marketingBannerViewed, setMarketingBannerViewed, _hasHydrated } =
+  const { marketingBannerViewed, _hasHydrated } =
     usePersistentStore();
 
   const router = useRouter();
@@ -199,7 +199,7 @@ export default function HeaderContent() {
                   <motion.div
                     className="before:absolute before:-left-36 before:top-0 before:w-36 before:h-full before:bg-gradient-to-r before:from-transparent before:to-background before:z-10 justify-between left-0 flex md:hidden absolute w-full h-full z-10 bg-background py-3 px-4"
                     initial={{ x: "100dvw" }}
-                    animate={{ x: isOpen ? 0 : "0dvw" }}
+                    animate={{ x: 0 }}
                     exit={{ x: "100dvw" }}
                     transition={{ duration: 0.15, easing: anticipate }}
                   >

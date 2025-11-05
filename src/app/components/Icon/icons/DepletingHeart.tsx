@@ -1,5 +1,4 @@
-import { anticipate } from "motion";
-import { motion } from "motion/react";
+import { anticipate, motion } from "motion/react";
 
 export default function DepletingHeart({
   closeHeart = false,

@@ -1,5 +1,5 @@
 "use client";
-import { AnimatePresence, anticipate, easeInOut, motion } from "motion/react";
+import { AnimatePresence, anticipate, motion } from "motion/react";
 import CrosshairCorners from "../Graphics/CrosshairCorners";
 import { useTranslations } from "next-intl";
 import Icon from "../Icon/Icon";
@@ -50,6 +50,7 @@ export default function MarketingBanner() {
                 <a
                   href={process.env.NEXT_PUBLIC_STAKING_URL}
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="text-brand-primary underline"
                 >
                   staking
@@ -75,7 +76,7 @@ export default function MarketingBanner() {
           </motion.div>
           <button
             onClick={() => handleCloseBanner()}
-            className="z-10 text-brand-secondary transition hover:text-brand-primary hover:cursor-pointer h-[32px] w-[32px] flex items-center justify-center absolute right-3 top-1/2 -translate-y-1/2 bg-background/60 sm:bg-transparent hover:bg-background/60 transition"
+            className="z-10 text-brand-secondary transition hover:text-brand-primary hover:cursor-pointer h-[32px] w-[32px] flex items-center justify-center absolute right-3 top-1/2 -translate-y-1/2 bg-background/60 sm:bg-transparent hover:bg-background/60"
           >
             <Icon name="Close" size={16 as 18} />
           </button>
